@@ -1,7 +1,7 @@
 /*
 Theme Name: Approx
 Theme URI: https://ampec-studio.com
-Author: the WordPress team
+Author: Shahed Mamun
 Author URI: https://ampec-studio.com
 Description: Approx is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
@@ -87,7 +87,10 @@ article.post:last-of-type {
 }
 
 .site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited {
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+    font-weight: bold;
     background-color: #00c358;
     color: white;
 }
@@ -105,10 +108,69 @@ article.page h2 {
 }
 
 
+/* Two Column Title Layout */
+div.title-column {
+    width: 30%;
+    float: left;
+}
+div.text-column {
+    width: 70%;
+    float: right;
+}
+
+/* info box */
+div.info-box {
+    width: 30%;
+    float: right;
+    margin: 0 0 30px 30px;
+    padding: 20px;
+    background-color: #eee;
+}
+div.info-box h4 {
+    margin-bottom: 6px;
+}
+div.info-box p {
+    font-size: 85%;
+}
+
+/* children links */
+.children-links {
+    margin-bottom: 20px;
+    font-size: 80%;
+}
+
+.children-links li {
+    margin-right: 20px;
+}
+.children-links ul {
+    float: left;
+}
+.children-links a:link,
+.children-links a:visited {
+    text-decoration: none;
+
+}
 
 
+.children-links .parent-link {
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    font-size: 120%;
+    font-weight: bold;
+}
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+    color: #333;
+}
 
-
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    cursor: default;
+}
 
 
 
@@ -117,9 +179,20 @@ article.page h2 {
 /* Header */
 
 .site-header{
-    border-bottom: 2px solid #999;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 30px 0 0 0;
 }
-
+.site-header h1 {
+    margin: 0;
+}
+.site-header h1 a:link,
+.site-header h1 a:visited {
+    text-decoration: none;
+}
+.site-header h5 {
+    margin: 0;
+}
 /* Footer */
 
 .site-footer{
