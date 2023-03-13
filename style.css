@@ -225,7 +225,66 @@ div.hd-search #s {
     padding: 3px 0;
 }
 
+/* Aside Styles */
+article.post-aside, article.post-link {
+    font-size: 125%;
+    background-color: #fff5cb;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+}
 
+.mini-meta {
+    font-size: 68%;
+    margin: 0;
+    color: #777;
+}
+
+/* Link post format styles */
+article.post-link {
+    padding: 0;
+    background-color: #d1dff0;
+}
+
+article.post-link a {
+    display: block;
+    padding: 20px;
+}
+
+/* Post Format Gallery Styles */
+article.post-gallery {
+    background-color: #00c358;
+    color: white;
+    padding: 20px;
+}
+
+article.post-gallery h2 {
+    text-align: center;
+}
+
+article.post-gallery img {
+    border: none !important;
+}
+
+
+/* Main column */
+.main-column {
+    width: 66%;
+    float: left;
+}
+
+/* side-column */
+.secondary-column {
+    width: 30%;
+    float: right;
+}
+/* footer widget area */
+.footer-widget-area {
+    width: 25%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
 
 
 
